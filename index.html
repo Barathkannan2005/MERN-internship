@@ -11,6 +11,7 @@
       padding: 0;
       box-sizing: border-box;
       background-color: #6884c5;
+      scroll-behavior: smooth; /* Enables smooth scrolling */
     }
     header {
       background-color: #333;
@@ -31,9 +32,7 @@
     }
     section {
       padding: 20px;
-    }
-    .hidden {
-      display: none;
+      min-height: 100vh; /* Makes each section cover at least the full viewport height */
     }
     #projects {
       display: grid;
@@ -56,9 +55,6 @@
       color: white;
       text-align: center;
       padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
     }
     button {
       padding: 10px 15px;
@@ -86,60 +82,58 @@
     <h1>BARATH</h1>
     <p>Software Developer | JavaScript Enthusiast | Open Source Contributor</p>
     <nav>
-      <a href="#" onclick="navigate('about')">About Me</a>
-      <a href="#" onclick="navigate('projects')">Projects</a>
-      <a href="#" onclick="navigate('contact')">Contact</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
     <img src="img.jpg" alt="Barath's Picture">
-    <p>Hello! I'm John BARATH, a passionate software developer with expertise in JavaScript, React, and Node.js. I love creating interactive web applications and contributing to open-source projects.</p>
+    <p>Hello! I'm BARATH, a passionate software developer with expertise in JavaScript, React, and Node.js. I love creating interactive web applications and contributing to open-source projects.</p>
+    <p>And I had been worked in GOOGLE,AMAZON,INFOYS</p>
   </section>
 
-  <section id="projects" class="hidden">
+  <section id="projects">
     <h2>Projects</h2>
     <div id="projects-list">
       <div class="project">
-        <h3>Project 1</h3>
-        <p>A cool project description.</p>
-        <button onclick="alert('More details coming soon!')">View More</button>
+        <h3>Weather App</h3>
+        <p>
+          A responsive weather application built using React and the OpenWeather API. 
+          Displays real-time weather conditions, a 7-day forecast, and interactive charts for better visualization.
+        </p>
+        <button onclick="alert('This project includes city search functionality, unit conversion, and weather alerts.')">View More</button>
       </div>
       <div class="project">
-        <h3>Project 2</h3>
-        <p>Another amazing project.</p>
-        <button onclick="alert('More details coming soon!')">View More</button>
+        <h3>E-Commerce Platform</h3>
+        <p>
+          A full-stack e-commerce platform developed with Node.js and MongoDB. 
+          Includes features like product catalog browsing, user authentication, a shopping cart, and secure payment integration.
+        </p>
+        <button onclick="alert('This project supports mobile-friendly designs, multiple payment gateways, and admin controls.')">View More</button>
       </div>
       <div class="project">
-        <h3>Project 3</h3>
-        <p>An innovative project idea.</p>
-        <button onclick="alert('More details coming soon!')">View More</button>
+        <h3>Portfolio Website</h3>
+        <p>
+          A personal portfolio website built with HTML, CSS, and JavaScript. 
+          Showcases projects, skills, and a detailed bio with smooth navigation and an interactive user experience.
+        </p>
+        <button onclick="alert('This portfolio highlights responsive design, custom animations, and dynamic content loading.')">View More</button>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="hidden">
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: BarathKannan2005@example.com</p>
     <p>GitHub: <a href="https://github.com/BarathKannan2005" target="_blank">github.com/BarathKannan</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/BarathKannan2005" target="_blank">linkedin.com/in/BarathKannan</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/Barath S" target="_blank">linkedin.com/in/Barath S</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Barath. All rights reserved.</p>
   </footer>
-
-  <script>
-    function navigate(sectionId) {
-      // Hide all sections
-      document.querySelectorAll("section").forEach((section) => {
-        section.classList.add("hidden");
-      });
-
-      // Show the selected section
-      document.getElementById(sectionId).classList.remove("hidden");
-    }
-  </script>
 </body>
 </html>
