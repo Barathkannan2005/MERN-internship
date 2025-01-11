@@ -40,6 +40,6 @@ function submitform(submit,isvalid){
  function formValidation(){
     email = "sece@sece.ac.in"
     password = "12345678"
-    if (email=="sece@secwe.ac.in"
+    if (email=="sece@secwe.ac.in")
  } 
  
