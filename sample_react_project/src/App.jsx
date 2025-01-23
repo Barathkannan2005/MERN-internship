@@ -10,6 +10,11 @@ import Signup from './Component/functional_comp/Signup'
 import UseState from './Component/functional_comp/Hooks/UseState'
 import UseEffectTextArea from './Component/functional_comp/Hooks/UseEffect'
 import UseEffectAPI from './Component/functional_comp/Hooks/UseEffectAPI'
+import UseRef from './Component/functional_comp/Hooks/UseRef'
+import UseMemo from './Component/functional_comp/Hooks/UseMemo'
+import UseReducerEX from './Component/functional_comp/Hooks/UseReducer'
+import UseCallback from './Component/functional_comp/Hooks/UseCallback'
+import List from './Component/functional_comp/Hooks/List'
 
 function App() {
   return (
@@ -22,9 +27,16 @@ function App() {
         <Route path='/contact' element={<Contact/>}></Route>
         <Route path='/classcomponent' element={<ClassComponent/>}></Route>
         <Route path='/Signup' element={<Signup/>}></Route>
-        <Route path='/UseState' elementt={<UseState/>}></Route>
+        <Route path='/usestate' elementt={<UseState/>}></Route>
         <Route path="/UseEffect" element={<UseEffectTextArea/>}></Route>
         <Route path="/useeffectapi" element={<UseEffectAPI />}></Route>
+        <Route path="/UseRef" element={<UseRef />}></Route>
+        <Route path="/UseMemo" element={<UseMemo />}></Route>
+        <Route path="/UseReducer" element={<UseReducerEX />}></Route>
+        <Route path="/UseCallback" element={<UseCallback />}></Route>
+        <Route path="/List" element={<List />}></Route>
+
+
       </Routes>
     </BrowserRouter> 
   );
