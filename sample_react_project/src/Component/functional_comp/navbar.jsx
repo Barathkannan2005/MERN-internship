@@ -32,8 +32,12 @@ const Navbar = () => {
                                 <li><Link to="/UseReducer">UseReducer</Link></li>
                                 <li><Link to="/UseCallback">UseCallback</Link></li>
                                 <li><Link to="/Student">Student</Link></li>
+                                <li><Link class = "link" to="/UseLocalStorage">LocalStorage</Link></li>
+                                
+
 
                     </ul>)}
+                    
                     </div>
                 </ol>
             </nav>

@@ -15,6 +15,8 @@ import UseMemo from './Component/functional_comp/Hooks/UseMemo'
 import UseReducerEX from './Component/functional_comp/Hooks/UseReducer'
 import UseCallback from './Component/functional_comp/Hooks/UseCallback'
 import Student from './Component/functional_comp/Hooks/Student'
+import Memo from './Component/functional_comp/Memoization/Memo'
+import LazyLoadingSuspence from './Component/functional_comp/Memoization/LazyLoadingSuspense'
 
 function App() {
   return (
@@ -34,7 +36,10 @@ function App() {
         <Route path="/UseMemo" element={<UseMemo />}></Route>
         <Route path="/UseReducer" element={<UseReducerEX />}></Route>
         <Route path="/UseCallback" element={<UseCallback />}></Route>
-        <Route path='/Student' element={<Student />}></Route>
+        <Route path='Student' element={<Student/>}></Route>
+        <Route path='/Memo' element={<Memo/>}></Route> 
+        <Route path='/LazyLoadingSuspence' element={<LazyLoadingSuspence/>}></Route> 
+        
 
 
       </Routes>
